@@ -1,10 +1,27 @@
 body {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vw 30vw 10vw;
+    
+    grid-template-rows: 50vw 10vw 100vw;
     grid-gap: 1em;
+    font-family: Open Sans;
   }
   
+  .img_1 {
+    border-radius: 10em;
+  }
+
+  header {
+    flex-direction: column;
+    display: flex; 
+    align-items: center; 
+    justify-content: center
+  }
+
+  .span1 { 
+    font-weight: bold;
+  }
+ 
+
   header,
   footer {
     grid-column: 1 / span 5;
@@ -12,6 +29,10 @@ body {
   
   main {
     grid-column: 1 / span 5;
+    display:flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
   }
   
   
@@ -20,29 +41,30 @@ body {
     main
      {
       grid-column: 1 / span 5;
+     
     }
     
   }
   
-  /* Demo Specific Styles */
+  
   body {
     margin: 0 auto;
     max-width: 56em;
     padding: 1em 0;
+  }
+
+  footer {
+    text-align: center;
+    display: grid
   }
   
   header,
   main,
   footer {
     background: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
   
-  header,
-  footer {
-    height: 10vw;;
-  }
+
   
   
